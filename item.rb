@@ -7,7 +7,7 @@ class Cart
     @items = []
   end
 
-  def add(item)
+  def  (item)
     #if item.is_a?(Item)
     @items << item
   end
@@ -23,6 +23,15 @@ class Item
     @import_tax = import_tax
   end
 
+  def sale_taxx
+    if sales_tax == true
+      shelf_price + ((.10 + shelf_price).ciel.to_f)
+    end
+  end
+
+  def import_taxx
+    if import_tax == true
+      shelf_price + ((.05 + shelf_price).ciel.to_f)
 end
 
 
