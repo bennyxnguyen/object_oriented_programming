@@ -33,7 +33,7 @@ attr_reader :quantity, :name
 
 end
 
-class Reciept
+class Receipt
 
     attr_accessor :items, :total, :total_sales_tax
 
@@ -72,20 +72,20 @@ imported_perfume = Item.new(1, "imported bottle of perfume", 47.50, true, true)
 perfume = Item.new(1, "bottle of perfume", 20.89, true, false)
 headache_pills = Item.new(1, "packet of headache pills", 9.75, false, false)
 
-reciept1 = Reciept.new
-reciept1.add(book)
-reciept1.add(music_cd)
-reciept1.add(chocolate_bar)
-reciept1.printout
+receipt1 = Receipt.new
+receipt1.add(book)
+receipt1.add(music_cd)
+receipt1.add(chocolate_bar)
+receipt1.printout
 
-reciept2 = Reciept.new
-reciept2.add(box_of_chocolates)
-reciept2.add(imported_perfume)
-reciept2.printout
+receipt2 = Receipt.new
+receipt2.add(box_of_chocolates)
+receipt2.add(imported_perfume)
+receipt2.printout
 
-reciept3 = Reciept.new
-reciept3.add(perfume)
-reciept3.add(box_of_chocolates)
-reciept3.add(imported_perfume)
-reciept3.add(headache_pills)
-reciept3.printout
+receipt3 = Receipt.new
+receipt3.add(perfume)
+receipt3.add(box_of_chocolates)
+receipt3.add(imported_perfume)
+receipt3.add(headache_pills)
+receipt3.printout
